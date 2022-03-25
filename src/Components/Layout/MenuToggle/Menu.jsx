@@ -1,14 +1,12 @@
 import React from "react"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import { ImHome } from "react-icons/im"
-
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 
 import '../MenuToggle/menu.css'
-
-import { Link } from "react-router-dom"
 
 export default function Menu (props){
     const [menuAberto, setMenuAberto] = useState(true)
@@ -30,13 +28,16 @@ export default function Menu (props){
                    <Link to="/"><ImHome/></Link>
                 </li>
                 <li>
-                   <Link to="#">Início</Link>
+                   <Link to="/Inicio">Início</Link>
                 </li>
                 <li>
                     <Link to="/Habilidade">Habilidades</Link>
                 </li>
                 <li>
-                    <Link to="#">Sobre mim</Link>
+                    <Link to="#">Projetos</Link>
+                </li>
+                <li>
+                    <Link to="/Curriculo">Currículo</Link>
                 </li>
                 <li>
                     <Link to="#">Sobre este site</Link>

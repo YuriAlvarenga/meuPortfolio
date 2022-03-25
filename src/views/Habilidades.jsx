@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 
 import './habilidades.css'
-import Conteudo from "../Components/Conteudos/Conteudo"
+import Conteudo from "../Components/ConteudosDeHabilidades/Conteudo"
+
+
 
 const Habilidade = () => {
 
@@ -29,49 +31,50 @@ const Habilidade = () => {
     const mostrandoHabilidadeGit = ()=>{
         setEscondeConteudoGit(!mostraConteudoGit)
     }
+  
     return(
         <div className="PaginaHabilidade">
-                <button className="HabilidadePython"
+                <div className="Habilidades"
                     onClick={mostrnadoHabilidadePython}>
                     Python
-                </button>
-                <div className={`Conteudo ${mostraConteudoPython  ? "HiddenConteudo" : ""}`} >
-                    <Conteudo/>
                 </div>
-                <button className="HabilidadeHtml" 
+                <div className={`Conteudo ${mostraConteudoPython  ? "HiddenConteudo" : ""}`} >
+                    {!mostraConteudoPython ? <Conteudo done = '30'/> : ""  } aqui terá conteúdo também
+                </div>
+                <div className="Habilidades" 
                     onClick={mostrnadoHabilidadeHtml}>
                     HTML
-                </button>
-                <div className={`Conteudo ${mostraConteudoHtml ? "HiddenConteudo" : ""}`}>
-                    <Conteudo/>
                 </div>
-                <button className="HabilidadeCss"
+                <div className={`Conteudo ${mostraConteudoHtml ? "HiddenConteudo" : ""}`}>
+                    {!mostraConteudoHtml ? <Conteudo  done = '70'/> : ""  } aqui terá conteúdo também
+                </div>
+                <div className="Habilidades"
                     onClick={mostrandoHabilidadeCss}>
                     CSS
-                </button>
-                <div className={`Conteudo ${mostraConteudoCss ? "HiddenConteudo" : ""}`}>
-                    <Conteudo/>
                 </div>
-                <button className="HabilidadeJavascript"
+                <div className={`Conteudo ${mostraConteudoCss ? "HiddenConteudo" : ""}`}>
+                    {!mostraConteudoCss ? <Conteudo  done = '60'/> : ""  }aqui terá conteúdo também
+                </div>
+                <div className="Habilidades"
                     onClick={mostrandoHabilidadeJavascript}>
                     JAVASCRIPT
-                </button>
-                <div className={`Conteudo ${mostraConteudoJavascript ? "HiddenConteudo" : ""}`}>
-                    <Conteudo/>
                 </div>
-                <button className="HabilidadeReact"
+                <div className={`Conteudo ${mostraConteudoJavascript ? "HiddenConteudo" : ""}`}>
+                    {!mostraConteudoJavascript ? <Conteudo  done = '60'/> : ""  }aqui terá conteúdo também
+                </div>
+                <div className="Habilidades"
                     onClick={mostrandoHabilidadeReact}>
                     REACT
-                </button>
-                <div className={`Conteudo ${mostraConteudoReact ? "HiddenConteudo" : ""}`}>
-                    <Conteudo/>
                 </div>
-                <button className="HabilidadeGit"
+                <div className={`Conteudo ${mostraConteudoReact ? "HiddenConteudo" : ""}`}>
+                    {!mostraConteudoReact ? <Conteudo  done = '30'/> : ""  }aqui terá conteúdo também
+                </div>
+                <div className="Habilidades"
                     onClick={mostrandoHabilidadeGit}>
                     GIT E GITHUB
-                </button>
+                </div>
                 <div className={`Conteudo ${mostraConteudoGit ? "HiddenConteudo" : ""}`}>
-                    <Conteudo/>
+                    {!mostraConteudoGit ? <Conteudo  done = '30'/> : ""  }aqui terá conteúdo também
                 </div>
         </div>
     )
