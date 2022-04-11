@@ -14,7 +14,7 @@ export default function Menu (props){
     const handleToggle = () => {
         setMenuAberto(!menuAberto)
       }
-
+    
     return(
         <nav className="Menu">
             <button className="buttonToggle" 
@@ -24,24 +24,12 @@ export default function Menu (props){
                 color="#eee"/>}
             </button>
             <ul className={`hiddenMenu ${menuAberto ? "hiddenMenu" : "menuNav"}`}>
-                <li>
-                   <Link to="/"><ImHome/></Link>
-                </li>
-                <li>
-                   <Link to="/Inicio">Início</Link>
-                </li>
-                <li>
-                    <Link to="/Habilidade">Habilidades</Link>
-                </li>
-                <li>
-                    <Link to="#">Projetos</Link>
-                </li>
-                <li>
-                    <Link to="/Curriculo">Currículo</Link>
-                </li>
-                <li>
-                    <Link to="#">Sobre este site</Link>
-                </li>
+                <Link to="/" className="selected"><ImHome/></Link>
+                <Link to="/Inicio" className="selected">Início</Link>
+                <Link to="/Habilidade" className="selected">Habilidades</Link>
+                <Link to="#" className="selected">Projetos</Link>
+                <Link to="/Curriculo" className="selected">Currículo</Link>
+                <Link to="#" className="selected">Sobre este site</Link> 
             </ul>
         </nav>
     )

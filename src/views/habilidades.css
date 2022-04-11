@@ -6,13 +6,13 @@
     flex: 1;
     color: rgb(2, 2, 2);
     background-color: #eeeeee;
-    min-height: 83vh;
+    min-height: 81vh;
     
 }
 
 .Habilidades{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(121, 10, 10, 0.863);
@@ -49,6 +49,6 @@
     display: none;
 }
 .PaginaHabilidade button:hover{
-    background-color: rgb(124, 31, 31);
+    background-color: rgba(129, 11, 11, 0.863);
     cursor: pointer;
 }

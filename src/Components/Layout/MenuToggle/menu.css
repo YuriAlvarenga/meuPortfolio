@@ -39,16 +39,11 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-.Menu li{
-    list-style: none;
-    font-size: 1em;
-}
-.Menu li a{
-    text-decoration: none;
-    color: #000;
-}
-.Menu li a:hover{
-    color: rgba(151, 13, 13, 0.863);
-    transition: all 0.1s ease-in;
-}
 
+.selected{
+    color: #000;
+    text-decoration: none;
+}
+.selected:hover{
+    color:rgba(129, 11, 11, 0.863)
+}

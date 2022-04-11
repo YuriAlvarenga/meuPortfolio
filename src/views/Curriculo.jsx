@@ -1,6 +1,6 @@
 import React from "react"
 import './curriculo.css'
-import Imagem from '../Imagens/fotoPerfil.jpeg'
+import Imagem from '../Imagens/euCamisaBranca.jpeg'
 
 const Curriculo = props =>(
     <div className="InicioCurriculo"> 
@@ -12,23 +12,22 @@ const Curriculo = props =>(
                 <img className="FotoPerfilInicio" src={Imagem} alt="Foto de Perfil" />
             </div>
             <div className="TituloTopicos">
-                Formação:
+                Formação
                 <div className="ConteudoFormacao">
-                    <text>Sistema de Informação: Instituto Federal Catarinense</text>
-                    <text>Camboriú- Santa Catarina (Cursando)</text>
+                    <p>Sistema de Informação: Instituto Federal Catarinense IFC</p>
+                    <p>Camboriú- Santa Catarina (Cursando)</p>
+                    
                 </div>
             </div>
             <div className="TituloTopicos">
-                Cursos Complementares:
+                Cursos Complementares
                 <div className="ConteudoFormacao">
-                    <text>Inglês:</text>
-                    <text>Intermediário</text>
-                    <text>Espanhol:</text>
-                    <text>Básico</text>
+                    <p>Inglês: Intermediário</p>
+                    <p>Espanhol: Básico</p>
                 </div>
             </div>
             <div className="TituloTopicos">
-                Redes Sociais:
+                Redes Sociais
             <div className="ConteudoRedesSociais">
                 <a href="https://br.linkedin.com/in/yuri-alvarenga-258332185"><button className="BtnLinkedin">Linked <text>in</text></button></a>
                 <a href="https://github.com/YuriAlvarenga"><button className="BtnGitHub">GitHub</button></a>
@@ -36,10 +35,10 @@ const Curriculo = props =>(
             </div>
             </div>
             <div className="TituloTopicos">
-                Download Currículo:
+                Download Currículo
                 <div className="ConteudoFormacao">
-                    <text>Quer saber mais?</text>
-                    <text>Faça o Download do meu currículo completo clicando no botão abaixo</text>
+                    <p>Quer saber mais?</p>
+                    <p>Faça o Download do meu currículo completo clicando no botão abaixo</p>
             </div>
             </div>
             <div>
