@@ -1,0 +1,13 @@
+.BarraProgresso {
+    width: 300px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #000;
+}
+.Progresso{
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: rgba(151, 13, 13, 0.863);
+    transition: 1s ease;
+}

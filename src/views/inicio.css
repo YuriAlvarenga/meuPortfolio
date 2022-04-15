@@ -1,0 +1,61 @@
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    overflow: hidden;
+}
+.ConteudoInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    background-color: #fff;
+    min-height: 81vh;
+    width: 80%;
+}
+.FalandoSobreMim{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 20px;
+}
+.FalandoSobreMim p{
+    color: black;
+}
+.SuporteCaixaComentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+input{
+    border-bottom: 1px solid rgb(99, 96, 96) ;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 80%;
+    height: 30px;
+}
+
+textarea{
+    width: 80%;
+    min-height: 100px;
+    margin-top: 20px;
+}
+.CaixaComFormularios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+}
