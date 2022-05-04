@@ -18,10 +18,9 @@ export default function Menu (props){
     return(
         <nav className="Menu">
             <button className="buttonToggle" 
-                onClick={handleToggle}> {menuAberto ? 
-                <FiMenu size={30} color="#eee"/> 
-                : <MdClose size={30}
-                color="#eee"/>}
+                onClick={handleToggle}> {menuAberto ?
+                <FiMenu size={30} color="#eee"/> :
+                <MdClose size={30} color="#eee"/>}
             </button>
             <ul className={`hiddenMenu ${menuAberto ? "hiddenMenu" : "menuNav"}`}>
                 <Link to="/" className="selected"><ImHome/></Link>

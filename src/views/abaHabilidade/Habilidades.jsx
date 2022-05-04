@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import './habilidades.css'
-import Conteudo from "../Components/ConteudosDeHabilidades/Conteudo"
+import Conteudo from "../../Components/ConteudosDeHabilidades/Conteudo"
 import { GoPlus } from 'react-icons/go'
 import { FaMinus} from  'react-icons/fa'
 

@@ -2,12 +2,12 @@ import React from "react"
 import './home.css'
 
 
-import Imagem from '../Imagens/fotoPerfil.jpeg'
+import Imagem from '../../Imagens/fotoPerfil.jpeg'
 
 const Home = props => (
     <div className="Home">
         <div className="Moldura">
-            <img className="Imagem" src={Imagem}></img>
+            <img className="Imagem" src={Imagem} alt="imagem de perfil Yuri Alvarenga" ></img>
         </div>
         <div className="bemVindo">
             <h1>PORTFÓLIO</h1>
@@ -15,4 +15,4 @@ const Home = props => (
     </div>
 )
 
-export default Home
+export default Home 

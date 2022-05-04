@@ -1,6 +1,6 @@
 import React from "react"
 import './curriculo.css'
-import Imagem from '../Imagens/euCamisaBranca.jpeg'
+import Imagem from '../../Imagens/euCamisaBranca.jpeg'
 
 const Curriculo = props =>(
     <div className="InicioCurriculo"> 

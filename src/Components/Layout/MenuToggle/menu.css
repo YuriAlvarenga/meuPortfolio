@@ -39,11 +39,17 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.casinhaPintada {
+    color: rgba(129, 11, 11, 0.863) ;
+}
+.casinhaNormal{
+    background-color:#eee
+}
 .selected{
     color: #000;
     text-decoration: none;
 }
-.selected:hover{
-    color:rgba(129, 11, 11, 0.863)
+.selected:focus{
+    color:rgba(129, 11, 11, 0.863);
+    text-decoration: underline 2px rgba(129, 11, 11, 0.863);
 }

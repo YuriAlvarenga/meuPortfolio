@@ -1,10 +1,10 @@
 import './App.css'
 
-import Content from './Components/Layout/Content';
+import Content from './Components/rotas/Content';
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import Menu from "../src/Components/Layout/MenuToggle/Menu"
-import Rodape from './Components/Layout/Rodape'
+import Rodape from './Components/rodape/Rodape'
 
 function App() {
   return (
