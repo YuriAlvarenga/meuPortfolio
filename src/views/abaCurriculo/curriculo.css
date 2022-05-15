@@ -4,35 +4,33 @@
     flex: 1;
     align-items: center;
     min-height: 100vh;
-    background-color: #eee;
+    background:  #eee;
 }
 .ConteudoDeInicio{
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
+    width: 90%;
+    margin-top: 30px;
+    
 }
 .TituloDeInicio{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    color: #000;
-    margin: 15px;
+    color: #eee;
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
     font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
-    
+    border-radius: 10px;
 }
 .Nome{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
-    
     min-height: 200px;
 }
 .Endereco{
@@ -49,36 +47,38 @@
     height: 200px;
     border-radius: 100%;
 }
+.MargemTopico{
+    background:#FFF;
+    min-height: 50px;
+}
 .TituloTopicos{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: #000;
-    padding: 5px;
+    color: #fff;
     font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;
-    border-bottom: 1px solid #000 ;
-    
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
+    border-radius: 10px;
 }
 .ConteudoFormacao{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin: 30px;
-    min-height: 50px;
+    min-height: 150px;
     font-size: 16px;
     font-family: sans-serif;
-    color: #000;
+    background: #FFF;
 }
 p{
     margin-left: 10px;
     font-size: 14px;
     font-family: sans-serif;
-    color: #000;
+    color: #203eeb;
 }
 .ConteudoFormacao text{
     margin-left: 10px;
@@ -88,11 +88,10 @@ p{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin: 30px;
-    min-height: 60px;
+    min-height: 150px;
     justify-content: space-around;
     font-family: sans-serif;
-   
+    background: #FFF;
 }
 .BtnLinkedin{
     color: blue;
@@ -103,8 +102,8 @@ p{
     padding: 10px;
     cursor: pointer;
 }
-.BtnLinkedin text{
-    padding: 1px;
+.BtnLinkedin span{
+    padding: 2px;
     border-radius: 1px solid #000;
     background-color: blue;
     color: #eee;
@@ -126,14 +125,19 @@ p{
     padding: 10px;
     cursor: pointer;
 }
-
+.SuporteCaixaBotaoDownload{
+    background:#eee;
+}
 .BtnDownload{
     color: #eee;
-    background-color: rgba(129, 11, 11, 0.863);
+    background: linear-gradient(#203eeb, #000);
     font-family: sans-serif;
     font-weight: bold;
     width: 20%;
     padding: 10px;
     margin: 30px;
     border-radius: 10px;
+}
+.BtnDownload:hover{
+    background: linear-gradient(#203eeb, #eee );
 }

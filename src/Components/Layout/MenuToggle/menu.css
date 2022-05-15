@@ -33,14 +33,15 @@
     overflow: hidden;
     padding: 10px;
     z-index: 9;
-    background-color: #eee;
+    background: #eee;
     border-radius: 5px;
     margin-right: 60px;
     margin-top: 0;
     margin-bottom: 0;
+    user-select: none;
 }
 .casinhaPintada {
-    color: rgba(129, 11, 11, 0.863) ;
+    color: #203eeb;
 }
 .casinhaNormal{
     background-color:#eee
@@ -49,7 +50,10 @@
     color: #000;
     text-decoration: none;
 }
+.selected:hover{
+    color:#203eeb;
+}
 .selected:focus{
-    color:rgba(129, 11, 11, 0.863);
-    text-decoration: underline 2px rgba(129, 11, 11, 0.863);
+    color: #677cf3;
+    text-decoration: underline 2px #203eeb;
 }

@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from '../../views/abaHome/Home'
 import Inicio from '../../views/abaInicio/Inicio'
 import Habilidade from '../../views/abaHabilidade/Habilidades'
+import Projeto from '../../views/abaProjetos/Projetos'
 import Curriculo from '../../views/abaCurriculo/Curriculo'
 
 
@@ -18,6 +19,7 @@ const Content = props =>{
                     </Route>
                 <Route exact path="/Habilidade" element = {<Habilidade />}>
                     </Route>
+                    <Route exact path="/Projetos" element={<Projeto/>}></Route>
                 <Route exact path="/Curriculo" element={<Curriculo/>}></Route>
                 
             </Routes>

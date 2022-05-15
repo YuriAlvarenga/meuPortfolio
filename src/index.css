@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgba(121, 13, 13, 0.863);
+  background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
 }
 
 code {

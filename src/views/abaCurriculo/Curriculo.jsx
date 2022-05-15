@@ -11,6 +11,7 @@ const Curriculo = props =>(
                 </div>
                 <img className="FotoPerfilInicio" src={Imagem} alt="Foto de Perfil" />
             </div>
+            <span className="MargemTopico"/>
             <div className="TituloTopicos">
                 Formação
                 <div className="ConteudoFormacao">
@@ -19,6 +20,7 @@ const Curriculo = props =>(
                     
                 </div>
             </div>
+            <span className="MargemTopico"/>
             <div className="TituloTopicos">
                 Cursos Complementares
                 <div className="ConteudoFormacao">
@@ -26,14 +28,16 @@ const Curriculo = props =>(
                     <p>Espanhol: Básico</p>
                 </div>
             </div>
+            <span className="MargemTopico"/>
             <div className="TituloTopicos">
                 Redes Sociais
             <div className="ConteudoRedesSociais">
-                <a href="https://br.linkedin.com/in/yuri-alvarenga-258332185"><button className="BtnLinkedin">Linked <text>in</text></button></a>
+                <a href="https://br.linkedin.com/in/yuri-alvarenga-258332185"><button className="BtnLinkedin">Linked <span>in</span></button></a>
                 <a href="https://github.com/YuriAlvarenga"><button className="BtnGitHub">GitHub</button></a>
                 <a href="https://www.instagram.com/yuri_alvareng/"><button className="BtnInstagram">Instagram</button></a>
             </div>
             </div>
+            <span className="MargemTopico"/>
             <div className="TituloTopicos">
                 Download Currículo
                 <div className="ConteudoFormacao">
@@ -41,9 +45,10 @@ const Curriculo = props =>(
                     <p>Faça o Download do meu currículo completo clicando no botão abaixo</p>
             </div>
             </div>
-            <div>
+            <div className="SuporteCaixaBotaoDownload">
                 <button className="BtnDownload">Currículo</button>
             </div>
+            
         </div>
     </div>
 )
