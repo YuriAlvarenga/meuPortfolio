@@ -1,0 +1,35 @@
+.Menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 30px;   
+}
+.ItensListaMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0px;
+}
+.ItensMenu{
+    color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif; 
+    list-style: none;
+    cursor: pointer;
+}
+.ItensMenu:hover{
+    color: #000;
+    background: #eee;
+    padding: 2px;
+    border-radius: 2px;
+}
+.ItensMenu:focus{
+    color: #000;
+    background: #eee;
+    padding: 2px;
+    border-radius: 2px;
+}

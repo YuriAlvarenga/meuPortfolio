@@ -1,18 +1,24 @@
 import './App.css'
 
-import Content from './Components/rotas/Content';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Menu from "../src/Components/Layout/MenuToggle/Menu"
+
 import Rodape from './Components/rodape/Rodape'
+import Menu from './Components/ComponenteMenu/Menu'
+import Rotas from './Components/ComponenteMenu/RotasDoMenu'
+
 
 function App() {
   return (
       <Router>
         <div className="App">
-          <Menu />
-          <Content />
-          <Rodape/>
+            <Menu/>
+          <main>
+            <Rotas/>
+          </main>
+          <footer>
+            <Rodape/>
+          </footer>
         </div>
       </Router>
   )

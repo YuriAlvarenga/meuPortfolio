@@ -1,99 +1,36 @@
-.PaginaHabilidade{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    flex: 1;
-    color: rgb(2, 2, 2);
-    background-color: #eeeeee;
+.QuadroHabilidades{
+    background: #eee;
+    min-height: 150vh;
 }
-.SuporteCaixaHabilidades{
+.QuadroHabilidades H2{
+    color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 30px;
-    margin-bottom: 150px;
-    
-}
-.TituloDeHabilidade{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    color: #eee;
-    padding: 10px;
-    padding-bottom: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 20px;
-    background: linear-gradient(90deg, rgb(54, 54, 54), rgb(0, 0, 0));
-    border: 2px solid #000;
-    border-radius: 10px;
-}
-.MargemTituloHabilidade{
-    margin-bottom: 30px;
+    min-height: 100px;
+    font-family: ra;
+    background: #eee;
+    margin: 0;
 }
 
-.Habilidades{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: #eee;
-    border-top: 2px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    width: 100%;
-    padding: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    
-}
-.Habilidades:hover{
-   
-    color: #203eeb;
-}
-.HabilidadesAbertas{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: #203eeb;
-    border-top: 2px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    width: 100%;
-    padding: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-}
-.Conteudo{
+.ComponenteDestaques{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    min-height: 100px; 
-    color: rgb(0, 0, 0);
-    width: 100%;
-    padding: 10px;
+    margin-top: 50px;
+    color: #000;
     background-color: #eee;
-    border-bottom: 1px solid #000;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 16px;
+    min-height: 200px;
+    font-family: ra;
+    cursor: pointer;
 }
-.HiddenConteudo{
-    display: none;
+
+@media(max-width:600px){
+    .ComponenteProgresso{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

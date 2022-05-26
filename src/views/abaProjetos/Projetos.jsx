@@ -1,17 +1,11 @@
 import React from "react"
-import ConteudoAbaProjeto from "../../Components/ConteudosDeProjetos/ConteudoAbaProjetos"
-import './projetos.css'
 
 
-function Projeto(){
+
+
+export default function Projetos(){
+
     return(
-        <>
-            <div className="PaginaProjetos">
-                <ConteudoAbaProjeto/>
-                <ConteudoAbaProjeto/>
-                <ConteudoAbaProjeto/>
-            </div>
-        </>
+            <div className="oie">oiesdiajsaisdja</div>
     )
 }
-export default Projeto
