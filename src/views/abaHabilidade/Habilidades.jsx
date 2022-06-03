@@ -2,7 +2,9 @@ import React, { useState } from "react"
 
 import './habilidades.css'
 
-import ComponenteHabilidade from "../../Components/ConteudosDeHabilidades/ComponenteHabilidades"
+import { IoIosCloseCircleOutline } from "react-icons/io"
+
+import ComponenteHabilidade from "../../Components/ConteudoDeHabilidades/ComponenteHabilidade"
 import HTML from '../../Imagens/logos/html.png'
 import CSS from '../../Imagens/logos/css.png'
 import JS from '../../Imagens/logos/js.png'
@@ -14,7 +16,7 @@ import GITHUB from '../../Imagens/logos/github.png'
 import REACT from '../../Imagens/logos/react.png'
 import NODE from '../../Imagens/logos/node.png'
 
-import Card from '../../Components/ConteudosDeHabilidades/ConteudoDeHabilidades'
+import { Card, CardContent, Typography } from "@mui/material"
 
 
 const Habilidade = () => {
@@ -22,7 +24,7 @@ const Habilidade = () => {
     const mostrandoHabilidade = ()=>{
         setMostraConteudoHabilidades(!conteudoHabilidades)
         console.log("mostrou gafanhoto")
-}
+    }
     return(
         <div className="QuadroHabilidades">
             <h2 >QUADRO DE HABILIDADES</h2>
@@ -30,22 +32,29 @@ const Habilidade = () => {
                 <div onClick={mostrandoHabilidade}> 
                     <ComponenteHabilidade  imagem= {HTML}/>
                 </div>
-                {conteudoHabilidades ? "" : <Card/>}
+                <div className={`"HiddenDiv" ${conteudoHabilidades ? "HiddenDiv" : "ConteudoAberto"}`}>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidade}/></div>
+                    <div className='conteudoHabilidade'>
+                        <Card sx={{ width: 300, height:400, backgroundColor: "#000", margin: 5}}>
+                            <CardContent ><Typography variant="body2" color="#eee">Conteudo Aqui</Typography> </CardContent>
+                        </Card>
+                    </div>
+                </div>
                 <div onClick={mostrandoHabilidade}>
                     <ComponenteHabilidade  imagem= {CSS}/>
                 </div>
-                <ComponenteHabilidade imagem= {JS}/>
-                <ComponenteHabilidade  imagem= {PYTHON}/>
+                <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {JS}/></div>
+                <div onClick={mostrandoHabilidade}><ComponenteHabilidade  imagem= {PYTHON}/></div>
             </div>
             <div className="ComponenteDestaques">
-                <ComponenteHabilidade imagem= {MONGO}/>
-                <ComponenteHabilidade imagem= {MYSQL}/>
-                <ComponenteHabilidade imagem= {POSTGRE}/>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {MONGO}/></div>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {MYSQL}/></div>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {POSTGRE}/></div>
             </div>
             <div className="ComponenteDestaques">
-                <ComponenteHabilidade imagem= {GITHUB}/>
-                <ComponenteHabilidade imagem= {REACT}/>
-                <ComponenteHabilidade imagem= {NODE}/>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {GITHUB}/></div>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {REACT}/></div>
+            <div onClick={mostrandoHabilidade} ><ComponenteHabilidade imagem= {NODE}/></div>
             </div>
         </div>
     )

@@ -1,36 +1,67 @@
 .QuadroHabilidades{
     background: #eee;
-    min-height: 150vh;
-}
-.QuadroHabilidades H2{
-    color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.QuadroHabilidades H2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
     min-height: 100px;
     font-family: ra;
-    background: #eee;
-    margin: 0;
+    user-select: none;
 }
 
 .ComponenteDestaques{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     justify-content: space-around;
     margin-top: 50px;
     color: #000;
-    background-color: #eee;
-    min-height: 200px;
-    font-family: ra;
+    background-color:#eee;
+    min-height: 30vh;
+    width: 80%;
     cursor: pointer;
+    user-select: none;
+}
+.HiddenDiv{
+    display: none;
+}
+.ConteudoAberto{
+    position: absolute;
+    width: 60%;
+}
+.conteudoHabilidade{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
 }
 
+.BotaoFecharCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 20px;
+    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0))
+}
 @media(max-width:600px){
-    .ComponenteProgresso{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .QuadroHabilidades h2{
+        font-size: 12px;
+        margin: 0;
+    }
+    .ComponenteDestaques{
+        min-height: 15vh;
+        cursor: pointer;
     }
 }

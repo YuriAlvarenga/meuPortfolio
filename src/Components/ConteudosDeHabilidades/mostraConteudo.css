@@ -4,7 +4,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: transparent;
     width: 100%;
-    margin-top: 100px;
+    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
 }

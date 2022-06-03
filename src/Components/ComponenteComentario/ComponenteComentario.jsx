@@ -1,8 +1,12 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import './comentario.css'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import  * as yup from "yup"
+
+import axios from "axios"
+
+const baseURL = "http://localhost:3333/comments"  ///qual endereço coloco?
 
 
 const validationPost = yup.object().shape({
@@ -13,6 +17,17 @@ const validationPost = yup.object().shape({
 
 
 export default function Comentario(){
+ //
+    const [comments, setPost] = useState(null)
+
+    useEffect(()=>{
+        axios.get(`${baseURL}`).then((response)=>{
+            setPost(response.data)
+        })
+    },[])
+    console.log(comments)
+ //
+
     const { register, handleSubmit, formState: { errors} } = useForm({
         resolver: yupResolver(validationPost)
     })
@@ -20,9 +35,10 @@ export default function Comentario(){
     return(
         <div className="ComponenteComentario">
             <h2 className="TituloComentario">COMENTÁRIOS</h2>
+            <div>{comments?.registroNome}</div>
             <form className="CaixaFormulario" onSubmit={handleSubmit(addPost)}>
                 <div className="Formulario" > 
-                    <input className="InputForm"  type="email" name="registroEmail" {...register("registroEmail")} placeholder="E-mail"/>
+                    <input className="InputForm" type="email" name="registroEmail" {...register("registroEmail")} placeholder="E-mail"/>
                     <p className="mensagensError">{errors.registroEmail?.message}</p>
                             
                     <input className="InputForm"  type="text" name="registroNome" {...register("registroNome")} placeholder="Digite o seu nome / Empresa"/>
@@ -33,6 +49,7 @@ export default function Comentario(){
                 </div>
                 <div className="CaixaBotao"> <button className="botaoInicio">Enviar</button></div>
             </form>
+           
         </div>
     )
 }

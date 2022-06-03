@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-.TituloSobreMim{
+.TituloPortfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,29 +11,20 @@
     font-family:'Roboto';
     
 }
-.QuadroDestaques{
-    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
-}
-.TituloDestaques{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #eee;
-    font-size: 20px;
-    height: 100px;
-}
-.CardSobreMim{
+.IconsContato{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    min-height: 500px;
-    font-family: 'Roboto';
+    width: 20%;
+}
+.IconsContato:hover{
+    cursor: pointer;
 }
 
+
 @media(max-width:600px){
-    .TituloSobreMim{
+    .TituloPortfolio{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -41,13 +32,19 @@
         padding: 40px;
         font-size: 8px;
         background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
+        min-height: 40vh;
     }
-}
-@media(max-width:600px){
-    .SobreMim{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: space-around;
+    .IconsContato{
+        width: 50%;
+        cursor: pointer;
+    }
+    .TituloDestaques{
+        font-size: 10px;
+    }
+    .CardsDestaques{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

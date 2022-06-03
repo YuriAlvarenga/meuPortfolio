@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
- 
+    margin: 0;
     background: #eee;
     min-height: 400px;
     font-family: ra;
@@ -53,9 +53,29 @@
     border-radius: 10px;
     width: 100px;
     font-weight: bolder;
-   background: radial-gradient( rgb(3, 3, 3), rgb(0, 0, 0));
+    background: radial-gradient( rgb(3, 3, 3), rgb(0, 0, 0));
     user-select: none;
 }
 .botaoInicio:hover{
     background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
+}
+@media(max-width:600px){
+    .CaixaFormulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .TituloComentario{
+        font-size: 14px;
+    }
+    .Formulario{
+        width: 100%;
+    }
+    .botaoInicio{
+        padding: 8px;
+        width: 80px;
+        user-select: none;
+        cursor: pointer;
+    }
 }

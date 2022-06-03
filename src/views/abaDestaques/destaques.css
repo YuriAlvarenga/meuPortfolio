@@ -1,0 +1,34 @@
+.QuadroDestaques{
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
+}
+.TituloDestaques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    font-size: 20px;
+    height: 150px;
+}
+.CardsDestaques{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 500px;
+    font-family: 'Roboto';
+    perspective: 1000px;/* 3D effect */
+}
+@media(max-width:600px){
+    .TituloDestaques{
+        font-size: 12px;
+    }
+    .CardsDestaques{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Roboto';
+        perspective: 1000px;/* 3D effect */
+    }
+}

@@ -1,32 +1,27 @@
 import React from "react"
 import './inicio.css'
 
+import { MdOutlineEmail } from "react-icons/md"
+import { AiFillGithub } from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai"
+import { IoLogoInstagram } from "react-icons/io"
 
-import ComponenteCardSobreMim from "../../Components/ComponenteSobreMim/ComponenteCardSobreMim"
 import Habilidade from "../abaHabilidade/Habilidades"
 import Comentario from "../../Components/ComponenteComentario/ComponenteComentario"
-import HTML from '../../Imagens/logos/html.png'
-import JS from '../../Imagens/logos/js.png'
-import PYTHON from '../../Imagens/logos/python.png'
+import Destaques from "../abaDestaques/Destaques"
 
 export default function Inicio(){
 
     return(
             <div>
-                <div className="TituloSobreMim">
+                <div className="TituloPortfolio">
                     <h2>SEJA BEM-VINDO AO MEU PORTFÓLIO !</h2>
-                </div>
-    
-                <Habilidade/>
-                <div className="QuadroDestaques">
-                    <div className="TituloDestaques"><h2>DESTAQUES</h2></div>
-                    <div className='CardSobreMim'>
-                        <ComponenteCardSobreMim titulo ="Calculadora" img = {HTML}/>
-                        <ComponenteCardSobreMim titulo = "To-do List" img = {JS}/>
-                        <ComponenteCardSobreMim titulo= "Netflix" img = {PYTHON}/>
-                        
+                    <div className="IconsContato">
+                        <MdOutlineEmail/><AiFillGithub/><AiFillLinkedin/><IoLogoInstagram/>
                     </div>
                 </div>
+                <Habilidade/>
+                <Destaques/>
                 <Comentario/>
             </div>
     )
