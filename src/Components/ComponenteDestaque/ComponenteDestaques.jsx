@@ -3,34 +3,48 @@ import { useState } from 'react'
 
 import './destaques.css'
 
+import { IoIosCloseCircleOutline } from "react-icons/io"
+import { AiFillHeart} from "react-icons/ai"
+import { AiFillLike } from "react-icons/ai"
 
-export default function MediaCard() {
+
+export default function MediaCard(props) {
   const [frontCard, setCard] = useState(true)
   const mudaCard=()=>{
     if (frontCard === true){
       setCard(!frontCard)
-
     }
     else{
       setCard(!frontCard)
-      console.log("girou o card")
     }
   }
+  const [coracaoNormal, setCoracao] = useState(true)
+  const botaoCoracao=()=>{
+    setCoracao(!coracaoNormal)
+  }
+  const [curtir, setCurtir] = useState(true)
+  const botaoCurtir=()=>{
+    setCurtir(!curtir)
+  }
+
   return (
-    <div className='FlipCard' onClick={mudaCard}>
-      <div className="Card " >
-        <div className={`"Card" ${frontCard ? "Card" : "BackCard"}`}>
+    <div className='FlipCard' >
+      <div className="Card "  >
+        <div onClick={mudaCard} className={`"Card" ${frontCard ? "Card" : "BackCard"}`}>
           <div className='BackgroundFrontCard'>
             <h1>Sobre Mim</h1>
-            <p>Desenvolvedor Front-End & Back-Endr</p>
-            <p>Iniciante</p>
           </div>
         </div>
         <div className={`"Card" ${frontCard ? "BackCard" : "Card"}`}>
           <div className='BackgroundBackCard'>
-            <h1>Yuri </h1>
-            <p>mudei o card</p>
-            <p>Iniciante</p>
+          <span className='SuporteBotaoFecharDestaque'><IoIosCloseCircleOutline onClick={mudaCard} className='BotaoFecharDestaque' size={22} /></span>
+            <h2>{props.titulo}</h2>
+            <p>{props.body}</p>
+          <span className='MenuCardFavorito' >
+            <AiFillHeart size={20} onClick={botaoCoracao} className={`"" ${coracaoNormal ? '': 'CoracaoCurtido'}`}/>
+            <AiFillLike size={20} onClick={botaoCurtir} className={`"" ${curtir ? '': 'Curtido'}`} />
+            total: 0
+          </span>
           </div>
         </div>
       </div>

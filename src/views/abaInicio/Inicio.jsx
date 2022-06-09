@@ -20,8 +20,8 @@ export default function Inicio(){
                         <MdOutlineEmail/><AiFillGithub/><AiFillLinkedin/><IoLogoInstagram/>
                     </div>
                 </div>
-                <Habilidade/>
                 <Destaques/>
+                <Habilidade/>
                 <Comentario/>
             </div>
     )

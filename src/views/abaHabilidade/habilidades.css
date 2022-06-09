@@ -1,5 +1,5 @@
 .QuadroHabilidades{
-    background: #eee;
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #000;
+    color: #eee;
     min-height: 100px;
     font-family: ra;
     user-select: none;
@@ -23,7 +23,7 @@
     justify-content: space-around;
     margin-top: 50px;
     color: #000;
-    background-color:#eee;
+    background-color:radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
     min-height: 30vh;
     width: 80%;
     cursor: pointer;
@@ -32,20 +32,11 @@
 .HiddenDiv{
     display: none;
 }
-.ConteudoAberto{
+.QuadroHabilidades .ConteudoAberto{
     position: absolute;
+    top: 1600px;
     width: 60%;
 }
-.conteudoHabilidade{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
-}
-
 .BotaoFecharCard{
     display: flex;
     flex-direction: column;
@@ -53,8 +44,13 @@
     justify-content: flex-end;
     width: 100%;
     margin-right: 20px;
-    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0))
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 @media(max-width:600px){
     .QuadroHabilidades h2{
         font-size: 12px;

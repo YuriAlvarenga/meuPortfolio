@@ -11,7 +11,7 @@ export default function Menu(){
                     <Link to="/" className="ItensMenu">INÍCIO</Link>
                     <Link to="/projetos" className="ItensMenu" >PROJETOS</Link>
                     <Link to="/#" className="ItensMenu">SOBRE ESTE SITE</Link>
-                    <Link to="/#" className="ItensMenu">CONTATOS</Link>
+                    <Link to="/#" className="ItensMenu">CONTATO</Link>
                 </ul>
             </div>
     )

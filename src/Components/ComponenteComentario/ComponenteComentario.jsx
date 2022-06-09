@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import './comentario.css'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -6,7 +6,7 @@ import  * as yup from "yup"
 
 import axios from "axios"
 
-const baseURL = "http://localhost:3333/comments"  ///qual endereço coloco?
+//const baseURL =  ///qual endereço coloco?
 
 
 const validationPost = yup.object().shape({
@@ -18,24 +18,31 @@ const validationPost = yup.object().shape({
 
 export default function Comentario(){
  //
-    const [comments, setPost] = useState(null)
-
-    useEffect(()=>{
-        axios.get(`${baseURL}`).then((response)=>{
-            setPost(response.data)
-        })
+    
+     useEffect(()=>{
+        axios.get("http://localhost:3333/comments").then((response)=>{
+            //console.log(response.data)
+            console.log("Deu certo?")
+            console.log(response.data)
+     }).catch((e)=>{
+         console.log("Este foi o erro", e)
+     })
     },[])
-    console.log(comments)
- //
 
     const { register, handleSubmit, formState: { errors} } = useForm({
-        resolver: yupResolver(validationPost)
+    resolver: yupResolver(validationPost)
     })
-    const addPost = data => console.log(data) //depois alterar o nome data para valor, melhor
+    //const addPost = data => console.log(data) //depois alterar o nome data para valor, melhor
+    const addPost = data => axios.post("http://localhost:3333/comments", data).then(()=>{
+        console.log("Deu certinho gafanhoto!")
+    }).catch(()=>{
+        console.log("Não foi dessa vez kkkkk vadio")
+    })
+
     return(
         <div className="ComponenteComentario">
             <h2 className="TituloComentario">COMENTÁRIOS</h2>
-            <div>{comments?.registroNome}</div>
+
             <form className="CaixaFormulario" onSubmit={handleSubmit(addPost)}>
                 <div className="Formulario" > 
                     <input className="InputForm" type="email" name="registroEmail" {...register("registroEmail")} placeholder="E-mail"/>
