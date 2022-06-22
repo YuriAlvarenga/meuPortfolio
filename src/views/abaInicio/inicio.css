@@ -18,6 +18,18 @@
     justify-content: space-around;
     width: 20%;
 }
+.IconeEmail:hover{
+    color: #38f2ff;
+}
+.IconeGit:hover{
+    color: #38f2ff;
+}
+.IconeLinkedin:hover{
+    color: #38f2ff;
+}
+.IconeInstagram:hover{
+    color: #38f2ff;
+}
 .IconsContato:hover{
     cursor: pointer;
 }

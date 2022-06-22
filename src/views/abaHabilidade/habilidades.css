@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 1200px;
+    position: relative;
 }
 .QuadroHabilidades H2{
     display: flex;
@@ -12,7 +14,7 @@
     justify-content: center;
     color: #eee;
     min-height: 100px;
-    font-family: ra;
+    font-family: sans-serif;
     user-select: none;
 }
 
@@ -34,7 +36,7 @@
 }
 .QuadroHabilidades .ConteudoAberto{
     position: absolute;
-    top: 1600px;
+    top: 400px;
     width: 60%;
 }
 .BotaoFecharCard{
@@ -43,13 +45,10 @@
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
-    margin-right: 20px;
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-right: 2px;
+    background: #000000e0;
 }
+
 
 @media(max-width:600px){
     .QuadroHabilidades h2{

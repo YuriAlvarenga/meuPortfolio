@@ -17,7 +17,10 @@ export default function Inicio(){
                 <div className="TituloPortfolio">
                     <h2>SEJA BEM-VINDO AO MEU PORTFÓLIO !</h2>
                     <div className="IconsContato">
-                        <MdOutlineEmail/><AiFillGithub/><AiFillLinkedin/><IoLogoInstagram/>
+                        <MdOutlineEmail className="IconeEmail"/>
+                        <AiFillGithub className="IconeGit"/>
+                        <AiFillLinkedin className="IconeLinkedin"/>
+                        <IoLogoInstagram className="IconeInstagram"/>
                     </div>
                 </div>
                 <Destaques/>

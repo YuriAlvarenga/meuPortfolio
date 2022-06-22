@@ -23,47 +23,38 @@ const Habilidade = () => {
     const[conteudoHabilidadeHTML, setMostraConteudoHabilidadeHMTL] = useState(true)
     const mostrandoHabilidadeHMTL = ()=>{
         setMostraConteudoHabilidadeHMTL(!conteudoHabilidadeHTML)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeCSS, setMostraConteudoHabilidadeCSS] = useState(true)
     const mostrandoHabilidadeCSS = ()=>{
         setMostraConteudoHabilidadeCSS(!conteudoHabilidadeCSS)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeJS, setMostraConteudoHabilidadeJS] = useState(true)
     const mostrandoHabilidadeJS = ()=>{
         setMostraConteudoHabilidadeJS(!conteudoHabilidadeJS)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadePython, setMostraConteudoHabilidadePython] = useState(true)
     const mostrandoHabilidadePython = ()=>{
         setMostraConteudoHabilidadePython(!conteudoHabilidadePython)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeMDB, setMostraConteudoHabilidadeMDB] = useState(true)
     const mostrandoHabilidadeMDB = ()=>{
         setMostraConteudoHabilidadeMDB(!conteudoHabilidadeMDB)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeSQL, setMostraConteudoHabilidadeSQL] = useState(true)
     const mostrandoHabilidadeSQL = ()=>{
         setMostraConteudoHabilidadeSQL(!conteudoHabilidadeSQL)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeGit, setMostraConteudoHabilidadeGit] = useState(true)
     const mostrandoHabilidadeGit = ()=>{
         setMostraConteudoHabilidadeGit(!conteudoHabilidadeGit)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeReact, setMostraConteudoHabilidadeReact] = useState(true)
     const mostrandoHabilidadeReact = ()=>{
         setMostraConteudoHabilidadeReact(!conteudoHabilidadeReact)
-        console.log("mostrou gafanhoto")
     }
     const[conteudoHabilidadeNode, setMostraConteudoHabilidadeNode] = useState(true)
     const mostrandoHabilidadeNode = ()=>{
         setMostraConteudoHabilidadeNode(!conteudoHabilidadeNode)
-        console.log("mostrou gafanhoto")
     }
 
     return(
@@ -203,7 +194,7 @@ const Habilidade = () => {
 
             <div onClick={mostrandoHabilidadeReact} ><ComponenteHabilidade imagem= {REACT}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeReact ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeReact}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeReact}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="REACT" 

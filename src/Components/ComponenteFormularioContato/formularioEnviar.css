@@ -1,0 +1,52 @@
+.FormularioContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #252525;
+}
+.textInput{
+    height: 20px;
+    width: 60%;
+    padding: 5px;
+    margin-top: 10px;
+    outline: none;
+    color: #fff;
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
+    border: none;
+}
+.textInput:focus{
+    color: #38f2ff;
+    border: 1px solid #38f2ff;
+}
+.InputAreaContato{
+    height: 200px;
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    background: radial-gradient( rgb(70, 68, 68), rgb(0, 0, 0));
+}
+.InputAreaContato:focus{
+    color: #38f2ff;
+    border: 1px solid;
+}
+.BotaoContato{
+    color: #eee; 
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: bolder;
+    margin-top: 30px;
+    background: radial-gradient( rgb(3, 3, 3), rgb(0, 0, 0));
+    user-select: none;
+    cursor: pointer;
+}
+.BotaoContato:hover{
+    border: 1px solid #38f2ff;
+}

@@ -33,7 +33,16 @@
 }
 .InputForm{
     width: 80%;
-    padding: 7px;
+    padding: 9px;
+    height: 20px;
+    outline: none;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.InputForm:focus{
+    color: #38f2ff;
+    border: 2px solid #38f2ff;
 }
 .InputArea{
     height: 200px;
@@ -41,6 +50,13 @@
     padding: 9px;
     outline: none;
     resize: none;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.InputArea:focus{
+    color: #38f2ff;
+    border: 2px solid #38f2ff;
 }
 .CaixaBotao{
     display: flex;
@@ -48,7 +64,7 @@
     width: 30%;
 }
 .botaoInicio{
-    color: #eee; 
+    color: #fff; 
     padding: 15px;
     border-radius: 10px;
     width: 150px;
@@ -57,7 +73,20 @@
     user-select: none;
 }
 .botaoInicio:hover{
-    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
+    border: 2px solid #38f2ff;
+    color: #38f2ff;
+}
+.ContainerComentariosRecebidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.ContainerComentariosRecebidos h2{
+    min-height: 100px;
+    margin-top: 60px;
 }
 @media(max-width:600px){
     .CaixaFormulario{

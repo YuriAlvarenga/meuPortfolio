@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 import { useState } from 'react'
 
 import './destaques.css'
@@ -8,7 +9,8 @@ import { AiFillHeart} from "react-icons/ai"
 import { AiFillLike } from "react-icons/ai"
 
 
-export default function MediaCard(props) {
+
+function MediaCard(props) {
   const [frontCard, setCard] = useState(true)
   const mudaCard=()=>{
     if (frontCard === true){
@@ -19,12 +21,28 @@ export default function MediaCard(props) {
     }
   }
   const [coracaoNormal, setCoracao] = useState(true)
+  const [contador, setContador] = useState(0)
   const botaoCoracao=()=>{
-    setCoracao(!coracaoNormal)
+    if (coracaoNormal === true){
+      setCoracao(!coracaoNormal)
+      setContador( contador + 1)
+    }
+    else{
+      setCoracao(!coracaoNormal)
+      setContador(contador - 1)
+    }
   }
   const [curtir, setCurtir] = useState(true)
+  const [contadorCurtida, setContadorCurtida] = useState(0)
   const botaoCurtir=()=>{
-    setCurtir(!curtir)
+    if (curtir === true){
+      setCurtir(!curtir)
+      setContadorCurtida(contadorCurtida + 1)
+    }
+    else{
+      setCurtir(!curtir)
+      setContadorCurtida(contadorCurtida - 1)
+    }
   }
 
   return (
@@ -32,18 +50,19 @@ export default function MediaCard(props) {
       <div className="Card "  >
         <div onClick={mudaCard} className={`"Card" ${frontCard ? "Card" : "BackCard"}`}>
           <div className='BackgroundFrontCard'>
-            <h1>Sobre Mim</h1>
+            <h1>{props.tituloFront}</h1>
           </div>
         </div>
         <div className={`"Card" ${frontCard ? "BackCard" : "Card"}`}>
           <div className='BackgroundBackCard'>
           <span className='SuporteBotaoFecharDestaque'><IoIosCloseCircleOutline onClick={mudaCard} className='BotaoFecharDestaque' size={22} /></span>
-            <h2>{props.titulo}</h2>
+            <h2>{props.tituloBack}</h2>
             <p>{props.body}</p>
           <span className='MenuCardFavorito' >
             <AiFillHeart size={20} onClick={botaoCoracao} className={`"" ${coracaoNormal ? '': 'CoracaoCurtido'}`}/>
+            total: {contador}
             <AiFillLike size={20} onClick={botaoCurtir} className={`"" ${curtir ? '': 'Curtido'}`} />
-            total: 0
+            total: {contadorCurtida}
           </span>
           </div>
         </div>
@@ -54,3 +73,4 @@ export default function MediaCard(props) {
 
   );
 }
+export default memo(MediaCard)

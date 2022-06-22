@@ -7,7 +7,7 @@ export default function ComponenteHabilidade(props) {
     return(
         <div>
             <div >
-                <button className="ComponenteBotaoHabilidade"><img className="ImagemHabilidade" src={props.imagem} alt="html" /></button>
+                <div className="ComponenteBotaoHabilidade"><img className="ImagemHabilidade" src={props.imagem} alt="html" /></div>
             </div>
             {props.titulo}
         </div>
