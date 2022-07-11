@@ -15,7 +15,6 @@ export default function CardHabilidade(props) {
               <li>{props.body6}</li>
               <li>{props.body7}</li>
               <li>{props.body8}</li>
-              <li>{props.body9}</li>
             </ul>
           </div>
       </div>

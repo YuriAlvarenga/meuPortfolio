@@ -40,10 +40,7 @@
     color: #fff;
     border-radius: 10px;
 }
-.InputForm:focus{
-    color: #38f2ff;
-    border: 2px solid #38f2ff;
-}
+
 .InputArea{
     height: 200px;
     width: 80%;
@@ -54,10 +51,7 @@
     color: #fff;
     border-radius: 10px;
 }
-.InputArea:focus{
-    color: #38f2ff;
-    border: 2px solid #38f2ff;
-}
+
 .CaixaBotao{
     display: flex;
     flex-direction: row;
@@ -72,10 +66,7 @@
     background: radial-gradient( rgb(3, 3, 3), rgb(0, 0, 0));
     user-select: none;
 }
-.botaoInicio:hover{
-    border: 2px solid #38f2ff;
-    color: #38f2ff;
-}
+
 .ContainerComentariosRecebidos{
     display: flex;
     flex-direction: column;

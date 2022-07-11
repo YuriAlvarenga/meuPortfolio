@@ -8,7 +8,7 @@ import { IoLogoInstagram } from "react-icons/io"
 
 import Habilidade from "../abaHabilidade/Habilidades"
 import Comentario from "../../Components/ComponenteComentario/ComponenteComentario"
-import Destaques from "../abaDestaques/Destaques"
+import Destaques from "../abaCuriosidades/Curiosidades"
 
 export default function Inicio(){
 

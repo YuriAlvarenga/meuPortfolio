@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./cardProjeto.css"
 
 import Card from '@mui/material/Card';
@@ -11,27 +11,33 @@ import Typography from '@mui/material/Typography';
 
 
 export default function CardProjeto(props){
+    const [divTeste, setDivTest] = useState(true)
+    const abreDivTeste = () =>{
+        setDivTest(!divTeste)
+    }
     return(
         <div>
              <Card sx={{ maxWidth: 345 }}>
+                <div className={divTeste === true ? "DivImagemAberta" :"HiddenDiv"}>
                 <CardMedia
                     component="img"
+                    height={260}
                     alt="green iguana"
-                    height="280"
                     image={props.img}
                 />
+                </div>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         {props.titulo}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                        {props.descricao}
                     </Typography>
                 </CardContent>
                 <CardActions >
-                    <Button  size="small">Testar</Button>
+                    <Button  size="small" onClick={abreDivTeste}>Testar</Button>
                 </CardActions>
+                <div className={divTeste === true ? "HiddenDiv" : "DivAberta"}>{props.componente}</div>
             </Card>
         </div>
     )

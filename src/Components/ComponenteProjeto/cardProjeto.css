@@ -1,0 +1,17 @@
+.HiddenDiv{
+    display: none;
+}
+.DivImagemAberta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: aqua;
+}
+.DivAberta{
+    min-height: 80vh;
+    width: 100%;
+    background: #000;
+    position: relative;
+    color: aliceblue;
+}

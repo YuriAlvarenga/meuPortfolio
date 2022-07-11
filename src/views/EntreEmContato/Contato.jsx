@@ -1,11 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 
-import FomularioEnviar from "../../Components/ComponenteFormularioContato/ComponenteFormulario"
 import './contato.css'
 
+import FomularioEnviarEmail from "../../Components/ComponenteFormularioContato/FormularioEmailContato/formularioEmail"
+import Whatsapp from "../../Components/ComponenteFormularioContato/ComponenteWhatsapp/WhatsappContato"
 
 export default function Contato(){
-
+    const[alternaAba, setAlternaAba] = useState("AbaEnviarEmail")
+    const alternaAba1 = () =>{
+        setAlternaAba("AbaEnviarEmail")
+    }
+    const alternaAba2 = () =>{
+        setAlternaAba("AbaWhatsapp")
+    }
     return(
         <div className="AbaContato">
             <div className="ContainerTexto">
@@ -21,10 +28,16 @@ export default function Contato(){
             </div>
             <div className="ContainerContato">
                 <div className="BotoesDasAbas">
-                    <div className="AbaEnviarEmail">Enviar E-mail</div>
-                    <div className="AbaWhatsapp">Whatsapp</div>
+                    <div className={alternaAba === "AbaEnviarEmail" ? "active" : ""}
+                        onClick={alternaAba1}>
+                        Enviar E-mail
+                    </div>
+                    <div className={alternaAba === "AbaWhatsapp" ? "active" : ""}
+                        onClick={alternaAba2}>
+                        Whatsapp
+                    </div>
                 </div>
-                <FomularioEnviar/>
+                {alternaAba === "AbaEnviarEmail" ? <FomularioEnviarEmail/> : <Whatsapp/>}
 
             </div>
             

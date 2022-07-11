@@ -5,7 +5,7 @@ import './habilidades.css'
 import { IoIosCloseCircleOutline } from "react-icons/io"
 
 import ComponenteHabilidade from "../../Components/ComponenteDeHabilidades/ComponenteHabilidade"
-import ConteudoDeHabilidade from "../../Components/ConteudosDeHabilidades/ConteudoDeHabilidades"
+import ConteudoDeHabilidade from "../../Components/ComponenteDeHabilidades/ConteudosDeHabilidades/ConteudoDeHabilidades"
 import HTML from '../../Imagens/logos/html.png'
 import CSS from '../../Imagens/logos/css.png'
 import JS from '../../Imagens/logos/js.png'
@@ -63,37 +63,36 @@ const Habilidade = () => {
             <div className="ComponenteDestaques">
                 <div onClick={mostrandoHabilidadeHMTL}> <ComponenteHabilidade  imagem= {HTML}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeHTML ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeHMTL}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeHMTL}/></div>
                     <div >
                         <ConteudoDeHabilidade 
-                         titulo="HMTL" 
-                         body1="Anatomia de um documento HTML"
-                         body2="Utilização de imagens"
-                         body3="Cabeçalhos"
-                         body4="Parágrafo"
-                         body5="Listas"
-                         body6="Links"
-                         body7="Aninhamento de elementos"
-                         body8="8 - "
-                         />
-                         
+                            titulo="HMTL" 
+                            body1="Anatomia de um documento HTML"
+                            body2="Semântica HTML"
+                            body3="Forms + Tipos de Input"
+                            body4="Parágrafo"
+                            body5="Listas"
+                            body6="Links"
+                            body7="Aninhamento de elementos"
+                            body8="Eventos"
+                        />
                     </div>
                 </div>
 
                 <div onClick={mostrandoHabilidadeCSS}><ComponenteHabilidade  imagem= {CSS}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeCSS ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeCSS}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeCSS}/></div>
                     <div >
                         <ConteudoDeHabilidade
                             titulo="CSS" 
                             body1="Anatomia de um conjunto de regras CSS"
                             body2="Selecionando múltiplos elementos"
                             body3="Diferentes tipos de seletores"
-                            body5="Caixas (paddin, border, margin..)"
-                            body6="Posicionamento e estilização"
-                            body7="Variáveis CSS"
-                            body8=""
-                            body9=""
+                            body4="Caixas (paddin, border, margin..)"
+                            body5="Posicionamento e estilização"
+                            body6="Variáveis CSS"
+                            body7="Tipografia"
+                            body8="Layouts: Flex e Grid"
                           />
                     </div>
                 </div>
@@ -101,18 +100,18 @@ const Habilidade = () => {
 
                 <div onClick={mostrandoHabilidadeJS} ><ComponenteHabilidade imagem= {JS}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeJS ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeJS}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeJS}/></div>
                     <div >
                         <ConteudoDeHabilidade
                          titulo="JAVASCRIPT" 
                          body1="Controle de fluxo e manipulação de erro"
                          body2="Laços e iteração"
-                         body3="Funções"
+                         body3="Funções e arrow Functions"
                          body4="Expressões e operadores"
                          body5="Expressões Regular"
-                         body6="Coleções Indexadas"
+                         body6="Uso do This dentro e fora da função"
                          body7="Trabalhando com objetos"
-                         body8=""
+                         body8="Destructuring"
                          />
                     </div>
                 </div>
@@ -121,7 +120,7 @@ const Habilidade = () => {
             <div className="ComponenteDestaques">
                 <div onClick={mostrandoHabilidadePython}><ComponenteHabilidade  imagem= {PYTHON}/></div>
                     <div className={`"HiddenDiv" ${conteudoHabilidadePython ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadePython}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadePython}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="PYTHON" 
@@ -139,7 +138,7 @@ const Habilidade = () => {
 
                 <div onClick={mostrandoHabilidadeMDB} ><ComponenteHabilidade imagem= {MONGO}/></div>
                     <div className={`"HiddenDiv" ${conteudoHabilidadeMDB ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeMDB}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeMDB}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="MONGODB" 
@@ -157,7 +156,7 @@ const Habilidade = () => {
 
             <div onClick={mostrandoHabilidadeSQL} ><ComponenteHabilidade imagem= {MYSQL}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeSQL ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeSQL}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeSQL}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="MYSQL" 
@@ -176,7 +175,7 @@ const Habilidade = () => {
             <div className="ComponenteDestaques">
             <div onClick={mostrandoHabilidadeGit} ><ComponenteHabilidade imagem= {GITHUB}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeGit ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeGit}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeGit}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="GIT E GITHUB" 
@@ -194,7 +193,7 @@ const Habilidade = () => {
 
             <div onClick={mostrandoHabilidadeReact} ><ComponenteHabilidade imagem= {REACT}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeReact ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeReact}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeReact}/></div>
                         <div >
                             <ConteudoDeHabilidade
                             titulo="REACT" 
@@ -212,7 +211,7 @@ const Habilidade = () => {
 
             <div onClick={mostrandoHabilidadeNode} ><ComponenteHabilidade imagem= {NODE}/></div>
                 <div className={`"HiddenDiv" ${conteudoHabilidadeNode ? "HiddenDiv" : "ConteudoAberto"}`}>
-                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#eee" onClick={mostrandoHabilidadeNode}/></div>
+                    <div className="BotaoFecharCard"><IoIosCloseCircleOutline size={25} color="#000" onClick={mostrandoHabilidadeNode}/></div>
                         <div >
                             <ConteudoDeHabilidade color="#000"
                             titulo="NODE" 

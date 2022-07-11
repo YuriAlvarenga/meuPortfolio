@@ -15,12 +15,29 @@
     color: rgb(0, 0, 0);
     margin-top: 30px;
     font-family: sans-serif;
+    position: relative;
 }
 .BotaoFechaMenuLateral{
-    margin: 0;
+    margin-right: 10px;
+    margin-top: 2px;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    cursor: pointer;
+}
+.BotaoFechaMenuLateral:hover{
+    color: #38f2ff;
+}
+.BotaoAbreMenuLateral{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: 2px;
+}
+.BotaoAbreMenuLateral:hover{
+    color: #38f2ff;
     cursor: pointer;
 }
 .MenuSobreEsteSite{
@@ -34,10 +51,27 @@
     border-bottom: 1px solid #38f2ff;
     background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
 }
+.HiddenMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient( rgb(70, 70, 68), rgb(0, 0, 0));
+    width: 2%;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.HiddenBotao{
+    display: none;
+}
+.HiddenLi{
+    visibility: hidden;
+}
 .ListaMenuSobreEsteSite{
     margin: 0;
     width: 100%;
     padding: 0;
+    border-bottom-right-radius: 20px;
 }
 .ItensMenuSobreEsteSite{
     display: flex;

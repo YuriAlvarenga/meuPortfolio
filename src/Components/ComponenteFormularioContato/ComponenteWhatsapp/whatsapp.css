@@ -1,0 +1,58 @@
+.AbaWhatsApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh;
+    width: 100%;
+    color: #eee;
+    font-family: sans-serif;
+    background-color: #252525;
+}   
+.TituloAbaWhatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items:unset;
+    justify-content: space-around;
+    height: 150px;
+    font-size: 10px;
+}
+.RedesSociaisContato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.BotaoGitContato{
+    background-color: #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.BotaoLinkedinContato{
+    background-color: blue;
+    cursor: pointer;
+}
+.BotaoInstagramContato{
+    border-radius: 100%;
+    cursor: pointer;
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.TitutoBotaoWhatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items:unset;
+    justify-content: space-around;
+    font-size: 10px;
+}
+.BotaoWhatsapp{
+    background-color:#25D366;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #eee;
+    font-size: 1em;
+}

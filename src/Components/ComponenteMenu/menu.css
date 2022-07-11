@@ -35,6 +35,9 @@
     border-radius: 2px;
     color: #38f2ff;
 }
+.ItensMenu:active{
+    color: #38f2ff;
+}
 
 @media(max-width:600px){
     .ItensListaMenu{

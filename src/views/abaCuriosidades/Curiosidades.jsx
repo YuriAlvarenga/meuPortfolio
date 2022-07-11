@@ -1,7 +1,7 @@
 import React from "react"
 import './destaques.css'
 
-import MediaCard from "../../Components/ComponenteDestaque/ComponenteDestaques"
+import MediaCard from "../../Components/ComponenteCuriosidade/ComponenteCuriosidades"
 
 export default function Destaques(){
     return(
