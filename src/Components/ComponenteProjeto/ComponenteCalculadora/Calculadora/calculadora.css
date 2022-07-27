@@ -18,8 +18,7 @@
     justify-content: flex-end;
     height: 100px;
     width: 100%;
-    border: 1px solid #eee;
-    border-radius: 10px;
+    border-bottom: 1px solid #eee;
     margin-top: 20px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -28,7 +27,7 @@
     margin-right: 20px;
     font-size: 3em;
 }
-button{
+.BotaoBranco{
     width: 2.3em;
     height: 2.3em;
     font-size: 1.5em;
@@ -37,14 +36,26 @@ button{
     margin: 0.4em;
     color: #000;
 }
-button:hover{
-    cursor: pointer;
-}
-.Orange{
+
+.BotaoOrange{
+    width: 2.3em;
+    height: 2.3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 100%;
+    margin: 0.4em;
     background: orange;
     color: #eee;
+    cursor: pointer;
 }
-.Cinza{
+.BotaoCinza{
+    width: 2.3em;
+    height: 2.3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 100%;
+    margin: 0.4em;
     background-color: #505050;
     color: #eee;
+    cursor: pointer;
 }

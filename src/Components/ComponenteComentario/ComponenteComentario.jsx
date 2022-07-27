@@ -7,7 +7,6 @@ import  * as yup from "yup"
 import ComentariosRecebidos from './ComentariosRecebidos/comentariosRecebidos'
 import axios from "axios"
 
-//const baseURL =  ///qual endereço coloco?
 
 
 const validationPost = yup.object().shape({
@@ -18,12 +17,11 @@ const validationPost = yup.object().shape({
 
 
 export default function Comentario(){
- //
+
     const [listaComentarios, setListaComentarios] = useState([])
     
      useEffect(()=>{
         axios.get("http://localhost:3333/comments").then((response)=>{
-            //console.log(response.data)
             setListaComentarios(response.data)
             console.log(response.data)
      }).catch((e)=>{
@@ -32,13 +30,13 @@ export default function Comentario(){
     },[])
 
     const { register, handleSubmit, formState: { errors} } = useForm({
-    resolver: yupResolver(validationPost)
+        resolver: yupResolver(validationPost)
     })
-    //const addPost = data => console.log(data) //depois alterar o nome data para valor, melhor
     const addPost = data => axios.post("http://localhost:3333/comments", data).then(()=>{
-        console.log("Deu certinho gafanhoto!")
-    }).catch(()=>{
-        console.log("Não foi dessa vez kkkkk ")
+        window.alert("Comentário inserido com sucesso")
+        window.location.reload()
+    }).catch((e)=>{
+        console.log("Seguinte errro: ", e)
     })
 
     return(
@@ -47,7 +45,7 @@ export default function Comentario(){
           
             <form className="CaixaFormulario" onSubmit={handleSubmit(addPost)}>
                 <div className="Formulario" > 
-                    <input className="InputForm" type="text" name="registroEmail" {...register("registroEmail")} placeholder="E-mail" autoComplete="off"/>
+                    <input className="InputForm" type="email" name="registroEmail" {...register("registroEmail")} placeholder="E-mail" autoComplete="off"/>
                     <p className="mensagensError">{errors.registroEmail?.message}</p>
                             
                     <input className="InputForm"  type="text" name="registroNome" {...register("registroNome")} placeholder="Digite o seu nome / Empresa" autoComplete="off"/>
